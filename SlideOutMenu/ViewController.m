@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "SWRevealViewController.h"
 
 @interface ViewController ()
+
 
 @end
 
@@ -16,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    SWRevealViewController *revealController = self.revealViewController;
+//    [self.view addGestureRecognizer:revealController.panGestureRecognizer];
+//    [self.view addGestureRecognizer:[[self revealViewController] panGestureRecognizer]];
+    NSLog(@"lol");
 }
 
 - (void)didReceiveMemoryWarning {

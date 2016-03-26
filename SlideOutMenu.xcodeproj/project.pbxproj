@@ -14,6 +14,10 @@
 		FDB406861CA6844A0076BEA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB406851CA6844A0076BEA9 /* Assets.xcassets */; };
 		FDB406891CA6844A0076BEA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB406871CA6844A0076BEA9 /* LaunchScreen.storyboard */; };
 		FDB406921CA6DBF50076BEA9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB406911CA6DBF50076BEA9 /* SWRevealViewController.m */; };
+		FDB406961CA6DD9D0076BEA9 /* BackTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB406951CA6DD9D0076BEA9 /* BackTableVC.m */; };
+		FDB4069B1CA6EAC90076BEA9 /* ReadLater.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4069A1CA6EAC90076BEA9 /* ReadLater.m */; };
+		FDB4069F1CA719660076BEA9 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4069E1CA719660076BEA9 /* Channel.m */; };
+		FDB406A21CA719750076BEA9 /* FriendRead.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB406A11CA719750076BEA9 /* FriendRead.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		FDB4068A1CA6844A0076BEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB406901CA6DBF50076BEA9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FDB406911CA6DBF50076BEA9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FDB406941CA6DD9D0076BEA9 /* BackTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackTableVC.h; sourceTree = "<group>"; };
+		FDB406951CA6DD9D0076BEA9 /* BackTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackTableVC.m; sourceTree = "<group>"; };
+		FDB406991CA6EAC90076BEA9 /* ReadLater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadLater.h; sourceTree = "<group>"; };
+		FDB4069A1CA6EAC90076BEA9 /* ReadLater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadLater.m; sourceTree = "<group>"; };
+		FDB4069D1CA719660076BEA9 /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		FDB4069E1CA719660076BEA9 /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		FDB406A01CA719750076BEA9 /* FriendRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendRead.h; sourceTree = "<group>"; };
+		FDB406A11CA719750076BEA9 /* FriendRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendRead.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +73,10 @@
 		FDB406781CA6844A0076BEA9 /* SlideOutMenu */ = {
 			isa = PBXGroup;
 			children = (
-				FDB4067C1CA6844A0076BEA9 /* AppDelegate.h */,
-				FDB4067D1CA6844A0076BEA9 /* AppDelegate.m */,
+				FDB406981CA6EAAC0076BEA9 /* ReadLater */,
+				FDB406931CA6DD5D0076BEA9 /* BackTableVC */,
+				FDB406971CA6EA9C0076BEA9 /* Channel */,
+				FDB4069C1CA719370076BEA9 /* FriendRead */,
 				FDB4067F1CA6844A0076BEA9 /* ViewController.h */,
 				FDB406801CA6844A0076BEA9 /* ViewController.m */,
 				FDB406821CA6844A0076BEA9 /* Main.storyboard */,
@@ -77,11 +91,49 @@
 		FDB406791CA6844A0076BEA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDB4067C1CA6844A0076BEA9 /* AppDelegate.h */,
+				FDB4067D1CA6844A0076BEA9 /* AppDelegate.m */,
 				FDB406901CA6DBF50076BEA9 /* SWRevealViewController.h */,
 				FDB406911CA6DBF50076BEA9 /* SWRevealViewController.m */,
 				FDB4067A1CA6844A0076BEA9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDB406931CA6DD5D0076BEA9 /* BackTableVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDB406941CA6DD9D0076BEA9 /* BackTableVC.h */,
+				FDB406951CA6DD9D0076BEA9 /* BackTableVC.m */,
+			);
+			name = BackTableVC;
+			sourceTree = "<group>";
+		};
+		FDB406971CA6EA9C0076BEA9 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				FDB4069D1CA719660076BEA9 /* Channel.h */,
+				FDB4069E1CA719660076BEA9 /* Channel.m */,
+			);
+			name = Channel;
+			sourceTree = "<group>";
+		};
+		FDB406981CA6EAAC0076BEA9 /* ReadLater */ = {
+			isa = PBXGroup;
+			children = (
+				FDB406991CA6EAC90076BEA9 /* ReadLater.h */,
+				FDB4069A1CA6EAC90076BEA9 /* ReadLater.m */,
+			);
+			name = ReadLater;
+			sourceTree = "<group>";
+		};
+		FDB4069C1CA719370076BEA9 /* FriendRead */ = {
+			isa = PBXGroup;
+			children = (
+				FDB406A01CA719750076BEA9 /* FriendRead.h */,
+				FDB406A11CA719750076BEA9 /* FriendRead.m */,
+			);
+			name = FriendRead;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB406811CA6844A0076BEA9 /* ViewController.m in Sources */,
+				FDB4069F1CA719660076BEA9 /* Channel.m in Sources */,
 				FDB4067E1CA6844A0076BEA9 /* AppDelegate.m in Sources */,
+				FDB406A21CA719750076BEA9 /* FriendRead.m in Sources */,
+				FDB406961CA6DD9D0076BEA9 /* BackTableVC.m in Sources */,
 				FDB4067B1CA6844A0076BEA9 /* main.m in Sources */,
+				FDB4069B1CA6EAC90076BEA9 /* ReadLater.m in Sources */,
 				FDB406921CA6DBF50076BEA9 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +327,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thanksdanny.SlideOutMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -282,6 +339,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thanksdanny.SlideOutMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
