@@ -16,9 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
-//    [self.view addGestureRecognizer:[[self revealViewController] panGestureRecognizer]];
+    self.title = @"Front View";
+
+    SWRevealViewController *revealController = self.revealViewController;
+    [revealController panGestureRecognizer];
+//    [revealController tapGestureRecognizer];
+    
+    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon"]
+                                                                         style:UIBarButtonItemStylePlain
+                                                                        target:revealController
+                                                                        action:@selector(revealToggle:)];
+    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon"]
+                                                                        style:UIBarButtonItemStylePlain
+                                                                       target:revealController
+                                                                       action:@selector(rightRevealToggle:)];
+    
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
+    self.navigationItem.rightBarButtonItem = rightButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {

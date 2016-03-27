@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BackTableVC : UITableViewController
+@interface BackTableVC : UIViewController
 
 @end

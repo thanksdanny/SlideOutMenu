@@ -7,6 +7,7 @@
 //
 
 #import "Channel.h"
+#import "SWRevealViewController.h"
 
 @interface Channel ()
 
@@ -16,7 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    SWRevealViewController *revealController = self.revealViewController;
+    [revealController panGestureRecognizer];
+    
+    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon"]
+                                                                         style:UIBarButtonItemStylePlain
+                                                                        target:revealController
+                                                                        action:@selector(revealToggle:)];
+    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon"]
+                                                                        style:UIBarButtonItemStylePlain
+                                                                       target:revealController
+                                                                       action:@selector(rightRevealToggle:)];
+    
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
+    self.navigationItem.rightBarButtonItem = rightButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {

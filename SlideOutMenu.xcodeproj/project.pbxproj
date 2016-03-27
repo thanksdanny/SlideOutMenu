@@ -18,6 +18,11 @@
 		FDB4069B1CA6EAC90076BEA9 /* ReadLater.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4069A1CA6EAC90076BEA9 /* ReadLater.m */; };
 		FDB4069F1CA719660076BEA9 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4069E1CA719660076BEA9 /* Channel.m */; };
 		FDB406A21CA719750076BEA9 /* FriendRead.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB406A11CA719750076BEA9 /* FriendRead.m */; };
+		FDB406A41CA71C560076BEA9 /* ReadLater.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB406A31CA71C560076BEA9 /* ReadLater.xib */; };
+		FDB406A61CA71C730076BEA9 /* Channel.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB406A51CA71C730076BEA9 /* Channel.xib */; };
+		FDB406A81CA71C820076BEA9 /* FriendRead.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB406A71CA71C820076BEA9 /* FriendRead.xib */; };
+		FDB406AB1CA71EE10076BEA9 /* RightVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB406AA1CA71EE10076BEA9 /* RightVC.xib */; };
+		FDB406AE1CA71EF80076BEA9 /* RightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB406AD1CA71EF80076BEA9 /* RightVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,12 @@
 		FDB4069E1CA719660076BEA9 /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
 		FDB406A01CA719750076BEA9 /* FriendRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendRead.h; sourceTree = "<group>"; };
 		FDB406A11CA719750076BEA9 /* FriendRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendRead.m; sourceTree = "<group>"; };
+		FDB406A31CA71C560076BEA9 /* ReadLater.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadLater.xib; sourceTree = "<group>"; };
+		FDB406A51CA71C730076BEA9 /* Channel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Channel.xib; sourceTree = "<group>"; };
+		FDB406A71CA71C820076BEA9 /* FriendRead.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendRead.xib; sourceTree = "<group>"; };
+		FDB406AA1CA71EE10076BEA9 /* RightVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightVC.xib; sourceTree = "<group>"; };
+		FDB406AC1CA71EF80076BEA9 /* RightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightVC.h; sourceTree = "<group>"; };
+		FDB406AD1CA71EF80076BEA9 /* RightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +84,14 @@
 		FDB406781CA6844A0076BEA9 /* SlideOutMenu */ = {
 			isa = PBXGroup;
 			children = (
-				FDB406981CA6EAAC0076BEA9 /* ReadLater */,
-				FDB406931CA6DD5D0076BEA9 /* BackTableVC */,
-				FDB406971CA6EA9C0076BEA9 /* Channel */,
-				FDB4069C1CA719370076BEA9 /* FriendRead */,
+				FDB406A91CA71ECE0076BEA9 /* RightVC */,
+				FDB406981CA6EAAC0076BEA9 /* FrontVC */,
+				FDB406931CA6DD5D0076BEA9 /* RearVC */,
+				FDB406971CA6EA9C0076BEA9 /* Two */,
+				FDB4069C1CA719370076BEA9 /* Three */,
 				FDB4067F1CA6844A0076BEA9 /* ViewController.h */,
 				FDB406801CA6844A0076BEA9 /* ViewController.m */,
-				FDB406821CA6844A0076BEA9 /* Main.storyboard */,
 				FDB406851CA6844A0076BEA9 /* Assets.xcassets */,
-				FDB406871CA6844A0076BEA9 /* LaunchScreen.storyboard */,
-				FDB4068A1CA6844A0076BEA9 /* Info.plist */,
 				FDB406791CA6844A0076BEA9 /* Supporting Files */,
 			);
 			path = SlideOutMenu;
@@ -91,6 +100,9 @@
 		FDB406791CA6844A0076BEA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDB406871CA6844A0076BEA9 /* LaunchScreen.storyboard */,
+				FDB4068A1CA6844A0076BEA9 /* Info.plist */,
+				FDB406821CA6844A0076BEA9 /* Main.storyboard */,
 				FDB4067C1CA6844A0076BEA9 /* AppDelegate.h */,
 				FDB4067D1CA6844A0076BEA9 /* AppDelegate.m */,
 				FDB406901CA6DBF50076BEA9 /* SWRevealViewController.h */,
@@ -100,40 +112,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FDB406931CA6DD5D0076BEA9 /* BackTableVC */ = {
+		FDB406931CA6DD5D0076BEA9 /* RearVC */ = {
 			isa = PBXGroup;
 			children = (
 				FDB406941CA6DD9D0076BEA9 /* BackTableVC.h */,
 				FDB406951CA6DD9D0076BEA9 /* BackTableVC.m */,
 			);
-			name = BackTableVC;
+			name = RearVC;
 			sourceTree = "<group>";
 		};
-		FDB406971CA6EA9C0076BEA9 /* Channel */ = {
+		FDB406971CA6EA9C0076BEA9 /* Two */ = {
 			isa = PBXGroup;
 			children = (
 				FDB4069D1CA719660076BEA9 /* Channel.h */,
 				FDB4069E1CA719660076BEA9 /* Channel.m */,
+				FDB406A51CA71C730076BEA9 /* Channel.xib */,
 			);
-			name = Channel;
+			name = Two;
 			sourceTree = "<group>";
 		};
-		FDB406981CA6EAAC0076BEA9 /* ReadLater */ = {
+		FDB406981CA6EAAC0076BEA9 /* FrontVC */ = {
 			isa = PBXGroup;
 			children = (
 				FDB406991CA6EAC90076BEA9 /* ReadLater.h */,
 				FDB4069A1CA6EAC90076BEA9 /* ReadLater.m */,
+				FDB406A31CA71C560076BEA9 /* ReadLater.xib */,
 			);
-			name = ReadLater;
+			name = FrontVC;
 			sourceTree = "<group>";
 		};
-		FDB4069C1CA719370076BEA9 /* FriendRead */ = {
+		FDB4069C1CA719370076BEA9 /* Three */ = {
 			isa = PBXGroup;
 			children = (
 				FDB406A01CA719750076BEA9 /* FriendRead.h */,
 				FDB406A11CA719750076BEA9 /* FriendRead.m */,
+				FDB406A71CA71C820076BEA9 /* FriendRead.xib */,
 			);
-			name = FriendRead;
+			name = Three;
+			sourceTree = "<group>";
+		};
+		FDB406A91CA71ECE0076BEA9 /* RightVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDB406AC1CA71EF80076BEA9 /* RightVC.h */,
+				FDB406AD1CA71EF80076BEA9 /* RightVC.m */,
+				FDB406AA1CA71EE10076BEA9 /* RightVC.xib */,
+			);
+			name = RightVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB406891CA6844A0076BEA9 /* LaunchScreen.storyboard in Resources */,
+				FDB406A81CA71C820076BEA9 /* FriendRead.xib in Resources */,
+				FDB406AB1CA71EE10076BEA9 /* RightVC.xib in Resources */,
 				FDB406861CA6844A0076BEA9 /* Assets.xcassets in Resources */,
+				FDB406A61CA71C730076BEA9 /* Channel.xib in Resources */,
+				FDB406A41CA71C560076BEA9 /* ReadLater.xib in Resources */,
 				FDB406841CA6844A0076BEA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +243,7 @@
 				FDB4067B1CA6844A0076BEA9 /* main.m in Sources */,
 				FDB4069B1CA6EAC90076BEA9 /* ReadLater.m in Sources */,
 				FDB406921CA6DBF50076BEA9 /* SWRevealViewController.m in Sources */,
+				FDB406AE1CA71EF80076BEA9 /* RightVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

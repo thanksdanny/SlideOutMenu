@@ -7,7 +7,12 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SWRevealViewController.h"
+#import "RightVC.h"     // right
+#import "BackTableVC.h" // rear
+#import "ReadLater.h"   // front
+#import "Channel.h"     // two
+#import "FriendRead.h"  // three
 
 @interface AppDelegate ()
 
@@ -17,7 +22,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window = window;
+    
+    // 创建控制器
+    BackTableVC *backTableVC = [[BackTableVC alloc] init];
+    RightVC *rightVC = [[RightVC alloc] init];
+    ReadLater *readLaterVC = [[ReadLater alloc] init];
+    Channel *channelVC = [[Channel alloc] init];
+    FriendRead *friendReadVC = [[FriendRead alloc] init];
+    
+    // 创建导航
+    UINavigationController *frontNavigationVC = [[UINavigationController alloc] initWithRootViewController:readLaterVC];
+    UINavigationController *rearNavigationVC = [[UINavigationController alloc] initWithRootViewController:backTableVC];
+    
+    // 创建SWRevealViewController作为容器
+    SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:rearNavigationVC frontViewController:frontNavigationVC];
+    
+    // 设置右控制器背景为green，然后添加进revealViewController容器中
+    [rightVC.view setBackgroundColor:[UIColor greenColor]];
+    revealViewController.rightViewController = rightVC;
+    
+    // 把revealViewController添加 成为跟控制器
+    self.window.rootViewController = revealViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

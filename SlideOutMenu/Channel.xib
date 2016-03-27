@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Channel">
+            <connections>
+                <outlet property="view" destination="Bqt-zI-y7Z" id="zF6-eh-Xri"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1OD-bV-3yH">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article" translatesAutoresizingMaskIntoConstraints="NO" id="Bqt-zI-y7Z">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Bqt-zI-y7Z" secondAttribute="trailing" id="HUa-br-W1c"/>
+                <constraint firstItem="Bqt-zI-y7Z" firstAttribute="leading" secondItem="1OD-bV-3yH" secondAttribute="leading" id="QEZ-MR-9Hw"/>
+                <constraint firstItem="Bqt-zI-y7Z" firstAttribute="top" secondItem="1OD-bV-3yH" secondAttribute="top" id="Rit-u1-Oi5"/>
+                <constraint firstAttribute="bottom" secondItem="Bqt-zI-y7Z" secondAttribute="bottom" id="qVG-en-zF9"/>
+            </constraints>
+            <point key="canvasLocation" x="597" y="490"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="article" width="750" height="1334"/>
+    </resources>
+</document>

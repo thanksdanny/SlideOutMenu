@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendRead">
+            <connections>
+                <outlet property="view" destination="DNH-l4-GzV" id="PxL-eY-uh2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Zb-ZE-KZg">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feed" translatesAutoresizingMaskIntoConstraints="NO" id="DNH-l4-GzV">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DNH-l4-GzV" firstAttribute="leading" secondItem="8Zb-ZE-KZg" secondAttribute="leading" id="LPg-si-qre"/>
+                <constraint firstAttribute="bottom" secondItem="DNH-l4-GzV" secondAttribute="bottom" id="bVM-RP-ZzF"/>
+                <constraint firstItem="DNH-l4-GzV" firstAttribute="top" secondItem="8Zb-ZE-KZg" secondAttribute="top" id="v7L-Vy-6br"/>
+                <constraint firstAttribute="trailing" secondItem="DNH-l4-GzV" secondAttribute="trailing" id="xkg-zr-4d0"/>
+            </constraints>
+            <point key="canvasLocation" x="565" y="442"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Feed" width="750" height="1334"/>
+    </resources>
+</document>
